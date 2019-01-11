@@ -1,24 +1,14 @@
 <h3 class="title is-4">Favicons</h3>
+{% for file in favicons %}
 <div class="media">
   <div class="media-left">
-    <img src="/icon/favicon.ico" />
+    <img src="{{ file.filepath }}" />
   </div>
   <div class="media-content">
     <div class="tags">
-      <span class="tag">64px &times; 64px</span>
+      <span class="tag">{{ file.width }} &times; {{ file.height }}</span>
     </div>
-    <code>/icon/favicon.ico</code>
+    <code>{{ file.filepath }}</code>
   </div>
 </div>
-
-<div class="media">
-  <div class="media-left">
-    <img src="/icon/favicon.png" />
-  </div>
-  <div class="media-content">
-    <div class="tags">
-      <span class="tag">114px &times; 114px</span>
-    </div>
-    <code>/icon/favicon.png</code>
-  </div>
-</div>
+{% endfor %}
