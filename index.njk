@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brand Assets - Global Appearance Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <style type="text/css">
+    .swatch {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="has-navbar-fixed-top">
+  {% include "navbar.njk" %}
+
+  <section class="section" id="colors">
+    <div class="container">
+      <h2 class="title is-2">Colors</h2>
+      <hr>
+      {% include "colors.njk" %}
+    </div>
+  </section>
+
+  <section class="section" id="logo">
+    <div class="container">
+      <h2 class="title is-2">Logo</h2>
+      <hr>
+      {% include "logos.njk" %}
+    </div>
+  </section>
+
+  <section class="section" id="icons">
+    <div class="container">
+      <h2 class="title is-2">Favicon &amp; Touch Icons</h2>
+      <hr>
+      {% include "favicons.njk" %}
+      <hr>
+      <h3 class="title is-4">Apple Touch Icons</h3>
+      {% include "touch-icons.njk" %}
+    </div>
+  </section>
+</body>
+</html>

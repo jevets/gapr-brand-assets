@@ -1,0 +1,21 @@
+{% for color in colors %}
+  <div class="block">
+    <h3 class="title is-5">{{ color.name }}</h3>
+  </div>
+  <div class="columns block">
+    {% for type in ['hsl', 'hex', 'rgb'] %}
+      <div class="column">
+        <div class="media block" style="align-items: center">
+          <div class="media-left">
+            <div class="swatch" style="background: {{ color.codes[type] }};"></div>
+          </div>
+          <div class="media-content">
+            {# <div class="title is-6">{{ type.toUpperCase() }}</div> #}
+            <code>{{ color.codes[type] }}</code>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <hr>
+{% endfor %}
