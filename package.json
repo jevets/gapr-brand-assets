@@ -1,6 +1,9 @@
 {
+  "name": "gapr-brand-assets",
+  "description": "A reference for brand assets for Global Appearance Products",
   "scripts": {
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.0"
