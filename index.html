@@ -5,18 +5,102 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Brand Assets - Global Appearance Products</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <style>
+    .swatch {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
-<body>
-  <div class="notification">
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-light is-fixed-top">
     <div class="container">
-      <h1 class="title is-6">Brand Assets</h1>
+      <div class="navbar-brand">
+        <a href="/" class="navbar-item has-text-weight-bold">Brand Assets</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#colors" class="navbar-item">Colors</a>
+          <a href="#logo" class="navbar-item">Logo</a>
+          <a href="#icons" class="navbar-item">Icons</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" id="colors">
+    <div class="container">
+      <h2 class="title is-2">Colors</h2>
+      <hr>
+      <div class="media">
+        <div class="media-left">
+          <div class="swatch" style="background-color: #e5001c;"></div>
+        </div>
+        <div class="media-content">
+          <div class="subtitle is-4">Primary Red</div>
+          <p><code>#e5001c</code></p>
+          <p><code>rgb(229, 0, 28)</code></p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <div class="swatch" style="
+            background-color: #bcbdc1;
+          "></div>
+        </div>
+        <div class="media-content">
+          <div class="subtitle is-4">Light Grey</div>
+          <p><code>#bcbdc1</code></p>
+          <p><code>rgb(188, 189, 193)</code></p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <div class="swatch" style="
+            background-color: #58585a;
+          "></div>
+        </div>
+        <div class="media-content">
+          <div class="subtitle is-4">Dark Grey</div>
+          <p><code>#58585a</code></p>
+          <p><code>rgb(88, 88, 90)</code></p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <div class="swatch" style="
+            background-color: #231f20;
+          "></div>
+        </div>
+        <div class="media-content">
+          <div class="subtitle is-4">Black</div>
+          <p><code>#231f20</code></p>
+          <p><code>rgb(35, 31, 32)</code></p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <div class="swatch" style="
+            background-color: #ffffff;
+          "></div>
+        </div>
+        <div class="media-content">
+          <div class="subtitle is-4">White</div>
+          <p><code>#ffffff</code></p>
+          <p><code>rgb(255, 255, 255)</code></p>
+        </div>
+      </div>
     </div>
   </div>
-  <section class="section">
+
+  <section class="section" id="logo">
     <div class="container">
       <h2 class="title is-2">Logo</h2>
       <hr>
-      <h3 class="title is-5">Dark Foreground over White Background</h3>
+      <h3 class="title is-4">Dark Foreground over White Background</h3>
+      <h4 class="subtitle is-6">A standard logo for use over white backgrounds</h4>
       <p class="block tags">
         <span class="tag">555px &times; 342px</span>
         <span class="tag">300dpi</span>
@@ -27,7 +111,12 @@
         </div>
       </section>
       <hr>
-      <h3 class="title is-5">White Foreground over Transparent Background</h3>
+      <h3 class="title is-4">Dark Foreground over Transparent Background</h3>
+      <h4 class="subtitle is-6">A transparent logo for use over light backgrounds</h4>
+      <span class="tag is-warning is-large">#TODO</span>
+      <hr>
+      <h3 class="title is-4">White Foreground over Transparent Background</h3>
+      <h4 class="subtitle is-6">A transparent logo for use over dark backgrounds</h4>
       <p class="block tags">
         <span class="tag">650px &times; 373px</span>
         <span class="tag">144dpi</span>
@@ -38,10 +127,10 @@
         </div>
       </section>
       <hr>
-      <h3 class="title is-5">For CommerceLayer.io</h3>
-      <h4 class="subtitle">Displays on Checkout and Invoice/Receipt</h4>
+      <h3 class="title is-4">For CommerceLayer.io</h3>
+      <h4 class="subtitle is-6">Displays on Checkout and Invoice/Receipt</h4>
       <p class="block tags">
-        <span class="tag">200px &times; 50px</span>
+        <span class="tag">200px &times; 123px</span>
       </p>
       <section class="hero is-dark">
         <div class="hero-body has-text-centered">
@@ -51,11 +140,11 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="icons">
     <div class="container">
       <h2 class="title is-2">Favicon &amp; Touch Icons</h2>
       <hr>
-      <h3 class="title is-5">Favicons</h3>
+      <h3 class="title is-4">Favicons</h3>
       <div class="media" style="align-items: center">
         <div class="media-left">
           <img src="/icon/favicon.png" />
@@ -72,7 +161,7 @@
         </div>
       </div>
       <hr>
-      <h3 class="title is-5">Apple Touch Icons</h3>
+      <h3 class="title is-4">Apple Touch Icons</h3>
       <div class="media block" style="align-items: center">
         <div class="media-left">
           <img src="/icon/apple-touch-icon.png">
