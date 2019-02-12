@@ -89,6 +89,24 @@ const colors = [
       b: 32,
     },
   },
+  {
+    name: 'Blue',
+    hsl: {
+      h: 201,
+      s: 79,
+      l: 46,
+    },
+    hex: {
+      r: '19',
+      g: '91',
+      b: 'd2',
+    },
+    rgb: {
+      r: 25,
+      g: 145,
+      b: 210,
+    },
+  },
 ]
 
 module.exports = colors.map(color => {
